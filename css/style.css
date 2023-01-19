@@ -144,3 +144,8 @@ html{
     font-weight: 400;
     color:#fff;
 }
+
+.intro .content_banner_about .CVs{
+    display: flex;
+    gap: 20px;
+}
