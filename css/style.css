@@ -390,4 +390,54 @@ html{
     background: linear-gradient(to bottom, rgba(30,35,38,.8), rgba(30,35,38,1)),url(../img/Back.png);
     padding-top: 50px 20px;
     color: #fff;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+
+.skills .content_skills{
+   
+}
+
+.skills .content_skills .languages{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #212528;
+    max-width: 1100px;
+    border-radius: 40px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+} 
+
+.skills .content_skills .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2196f3;
+    border-radius: 50px;
+    gap: 1rem;
+    padding: 10px 25px 5px 25px;
+    cursor: default;
+} 
+
+.skills .content_skills .item i{
+    font-size: 35px;
+    margin-bottom: 10px;
+    transition: .3s;
+} 
+
+.skills .content_skills .item h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', sans-serif;
+} 
+
+.skills .content_skills .item:hover{
+    background-color: #2195f360;
+} 
+
