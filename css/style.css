@@ -485,8 +485,8 @@ html{
 
 .portfolio figure{
     position: relative;
-    height: 320px;
-    width: 480px;
+    height: 350px;
+    width: 500px;
     overflow: hidden;
     border-radius: 10px;
 }
