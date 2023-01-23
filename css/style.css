@@ -177,7 +177,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
-    height: 550px;
+    height: auto;
     width: 500px;
 }
 
@@ -185,6 +185,7 @@ html{
     font-family:'Righteous';
     font-size: 44px;
     color:#2196f3;
+    margin-bottom: 50px;
 }
 
 .education .content_education .content_education_describe{
@@ -202,12 +203,17 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 123px;
+    padding-right: 110px;
 }
 
 .education .content_education .coder i{
     font-size: 50px;
     padding-right: 50px;
+}
+
+.education .content_education .present hr{
+    width: 200px;
+    margin-left: 110px;
 }
 
 /*Experience*/
@@ -336,54 +342,6 @@ html{
     bottom: 4px;
 }
 
-/*See more button*/
-
-.bn30 {
-    border: 5em;
-    cursor: pointer;
-    outline: none;
-    font-size: 14px;
-    -webkit-transform: translate(0);
-    transform: translate(0);
-    background-image: linear-gradient(45deg, #2196f3, #7f0ff7);
-    padding: 0.7em 2em;
-    border-radius: 65px;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-    -webkit-transition: box-shadow 0.25s;
-    transition: box-shadow 0.25s;
-    color: white;
-    margin-left: 280px;
-  }
-  
-  .bn30 .text {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(45deg, #2196f3, #7f0ff7);
-  }
-  
-  .bn30:after {
-    content: "";
-    border-radius: 18px;
-    position: absolute;
-    margin: 4px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background: #0e0e10;
-  }
-  
-  .bn30:hover {
-    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-  }
-  
-  .bn30:hover .text {
-    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  }
-
   /*Skills*/
 
 .skills {
@@ -502,7 +460,7 @@ html{
     top: 0;
     width: 100%;
     height: 100%;
-    background:#032846c1;
+    background:#212528bd;
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -529,48 +487,6 @@ html{
     text-decoration: none;
     color: black;
 }
-
-/* 
-
-
-.portfolio .portfolio_content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.portfolio .portfolio_item{
-    position: relative;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    gap: 30px ;
-    overflow: hidden;
-}
-
-.portfolio .portfolio_item img{
-    width: 550px;
-    height: 380px;
-    border-radius: 15px;
-    transition: all 500ms ease-out;
-} */
-
-/* .portfolio .portfolio_item h3{
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 28px;
-} */
-
-/* .portfolio .portfolio_item .text{
-    position: absolute;
-  
-}
-
-.portfolio .portfolio_item .overlay:hover{
-    opacity: 1;
-} */
-
 
 /*Footer*/
 
