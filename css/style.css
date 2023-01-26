@@ -593,6 +593,10 @@ html{
 
 /*Experience*/
 
+.experience .fila{
+    width: 100%;
+}
+
 .experience .fila .col{
     width: 49%;
 }
@@ -604,10 +608,13 @@ html{
 .experience .fila .left{
     border-right: 2px solid #2196f3;
     margin-right: 20px;
+    margin-left: 150px;
 }
 
 .experience .fila .right{
     border-left: 2px solid #2196f3;
+    width: 70%;
+    margin-right: 100px;
 }
 
   /*Skills*/
