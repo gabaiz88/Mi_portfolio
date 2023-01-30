@@ -558,6 +558,19 @@ html{
     width: 100%;
 }
 
+.selected_lang{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.selected_lang .lang_flag{
+    text-decoration: none;
+    border: none;
+    background-color: #1e2326;
+}
+
+
 /*Intro*/
 
 .intro{
@@ -677,5 +690,17 @@ footer .networks a:hover{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }
+
+    .selected_lang{
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+    }
+    
+    .selected_lang .lang_flag{
+        text-decoration: none;
+        border: none;
+        background-color: #1e2326;
     }
 }
