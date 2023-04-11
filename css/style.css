@@ -635,6 +635,57 @@ html{
     margin-right: 100px;
 }
 
+#boton_mas {
+    position: relative;
+    width: 150px;
+    height:50px;
+    background-image: 
+      linear-gradient(to right, #eaf0f7,#3a92f8,#9fccff,#d1e4f9,#d7e5f4,#d5e3f7,#cad0f1); 
+    cursor: pointer;
+    margin-left: 60%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #boton_mas:before {
+    content:"";
+    position: absolute;
+    width:92%;
+    height:80%;
+    background-color: #252a2e;
+    top:5px;
+    left:5px;
+  }
+  
+  #boton_mas:after {
+    content:"Descripcion..";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    font-family: arial;
+    font-weight: 700;
+    font-size: 20px;
+    background-image: 
+      linear-gradient(to right,  #eaf0f7,#3a92f8,#9fccff,#d1e4f9,#d7e5f4,#d5e3f7,#cad0f1); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+  }
+  
+  @keyframes move {
+      to {
+          background-position: 2500vh;
+      }
+  }
+  
+  #boton_mas:hover {
+    animation: move 120s linear infinite;
+  }
+  
+  #boton_mas:hover:after {
+    animation: move 120s linear infinite;
+  }
+
   /*Skills*/
 
 .skills .content_skills{
