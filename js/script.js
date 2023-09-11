@@ -16,7 +16,7 @@ function select() {
   menuVisible = false;
 }
 
-// Create a function to change languange
+/* // Create a function to change languange
 function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
@@ -48,9 +48,9 @@ var language = {
     fourth_job: "Tesorero",
     fifth_job: "Cajero",
   },
-};
+}; */
 
-// Check if a hash value exists in the URL
+/* // Check if a hash value exists in the URL
 if (window.location.hash) {
   // Set the content of the webpage
   // depending on the hash value
@@ -75,7 +75,7 @@ if (window.location.hash) {
     fourth_job.textContent = language.eng.fourth_job;
     fifth_job.textContent = language.eng.fifth_job;
   }
-}
+} */
 
 //Funcion fetch del data.json
 function traerModals() {

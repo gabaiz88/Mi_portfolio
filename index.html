@@ -1,342 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Gabriel Aizman</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content_header">
-        <header>
-            <div class="logo">
-                <a href="./index.html">Gaby</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#intro" onclick="select()">INTRO</a></li>
-                    <li><a href="#education" onclick="select()">EDUCATION</a></li>
-                    <li><a href="#experience" onclick="select()">EXPERIENCE</a></li>
-                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
-                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
-                    <div class="selected_lang">
+      <header>
+        <div class="logo">
+          <a href="./index.html">Gaby</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#intro" onclick="select()">INTRO</a></li>
+            <li><a href="#education" onclick="select()">EDUCACION</a></li>
+            <li><a href="#experience" onclick="select()">EXPERIENCIA</a></li>
+            <li><a href="#skills" onclick="select()">HABILIDADES</a></li>
+            <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+            <!--  <div class="selected_lang">
                         <li>
                             <button class="lang_flag" onclick="changeLanguage('eng')"><i class="fi fi-gb"></i></button>
                         </li>
                         <li>
                             <button class="lang_flag" onclick="changeLanguage('es')"><i class="fi fi-es"></i></button>
                         </li>
-                    </div>
-                   
-                </ul>
-            </nav>
-            <div class="nav_responsive" onclick="show_hidden_menu()">
-                <i class="fa fa-bars"></i>
-            </div>
-        </header>
+                    </div> -->
+          </ul>
+        </nav>
+        <div class="nav_responsive" onclick="show_hidden_menu()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </header>
     </div>
     <section id="intro" class="intro">
-        <div class="content_banner">
-            <div class="content_banner_profile">
-                <div class="content_img">
-                    <img src="./img/ProfilePh.png" alt="Profile photo">
-                </div>
-                <h1>GABRIEL AIZMAN</h1>
-                <h2>Software Developer Analyst - React Web Developer</h2>
-                <div class="networks">
-                    <a href="https://www.linkedin.com/in/gabriel-aizman-419b92237/?locale=en_US" target="_blank"><i
-                            class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://github.com/gabaiz88" target="_blank"><i class="fa-brands fa-github"
-                            aria-hidden="true"></i></a>
-                    <a href="mailto:gabaiz88@gmail.com" target="_blank"><i class="fa-solid fa-envelope"
-                            aria-hidden="true"></i></a>
-                </div>
-            </div>
+      <div class="content_banner">
+        <div class="content_banner_profile">
+          <div class="content_img">
+            <img src="./img/ProfilePh.png" alt="Profile photo" />
+          </div>
+          <h1>GABRIEL AIZMAN</h1>
+          <h2>Analista Programador - Desarrollador Full Stack</h2>
+          <div class="networks">
+            <a
+              href="https://www.linkedin.com/in/gabriel-aizman-419b92237/?locale=en_US"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a href="https://github.com/gabaiz88" target="_blank"
+              ><i class="fa-brands fa-github" aria-hidden="true"></i
+            ></a>
+            <a href="mailto:gabaiz88@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+            ></a>
+          </div>
         </div>
-        <div class="content_banner">
-            <div class="content_banner_about">
-                <h3 id="about_me">A LITTLE BIT ABOUT MYSELF..</h3>
-                <h4 id="about_me_description">For the last 2 years, I have been involved in programming languages such as JAVA,
-                    JAVASCRIPT, HTML, CSS, SASS and C#.
-                    Prior to this, I worked in the banking and financial sector for over 14 years. These roles
-                    allowed me to develop leadership and management skills, as well as effective
-                    communication and collaboration skills. I am used to remaining calm while working in high
-                    pressure environments, and I have strong problem-solving skills.
-                    In the last year I studied and trained in the IT area, by taking Web Development courses,
-                    as well as undertaking the Systems Analyst career in ORT Institute in Buenos Aires.
-                    I'm looking for a new challenge that would allow me to further develop my system analyst
-                    skills. </h4>
-                <div class="CVs">
-                    <!-- <div class="content_banner_CV">
+      </div>
+      <div class="content_banner">
+        <div class="content_banner_about">
+          <h3 id="about_me">UN POCO SOBRE MI..</h3>
+          <h4 id="about_me_description">
+            En los últimos 2 años, he adquirido habilidades en programación,
+            incluyendo Java, Spring, Maven, Hibernate, SQL, JavaScript y React,
+            a través de la universidad y el aprendizaje autodidacta. Con más de
+            10 años de experiencia en el sector financiero, donde llegué a ser
+            responsable de sector, he desarrollado habilidades de liderazgo,
+            gestión y resolución de problemas bajo presión. Actualmente, estoy
+            cursando la carrera de Analista de Sistemas en el Instituto ORT de
+            Buenos Aires. Estoy entusiasmado por asumir nuevos desafíos como
+            desarrollador, aprovechando mi base técnica y experiencia en
+            liderazgo para contribuir a proyectos innovadores.
+          </h4>
+          <div class="CVs">
+            <!-- <div class="content_banner_CV">
                         <a href="./cv/CV_Aizman_Gabriel_.pdf" target="_blank"><button type="button"
                                 class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> CV in
                                 English</button></a>
                     </div> -->
-                    <div class="content_banner_CV">
-                        <a href="./cv/CV_Aizman_Gabriel_ES.pdf" target="_blank"><button type="button"
-                                class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> CV in
-                                Spanish</button></a>
-                    </div>
-                </div>
+            <div class="content_banner_CV">
+              <a href="./cv/CV_Aizman_Gabriel_ES.pdf" target="_blank"
+                ><button type="button" class="btn btn-primary">
+                  <i class="fa fa-download" aria-hidden="true"></i> Descargar CV
+                </button></a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="education" class="education">
-        <div class="content_education">
-            <div class="content_education_title">
-                <h2 id="education_title">EDUCATION</h2>
-            </div>
-            <div class="content_education_describe">
-                <div class="present">
-                    <h3>SOFTWARE DEVELOPER ANALYST</h3>
-                    <h4>Ort Institute Argentina</h4>
-                    <h5>Aug 2021 - Present</h5>
-                    <hr>
-                </div>
-                <div class="coder">
-                    <a href="./img/CertificadoReactJs.png" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-                    <div class="coder_content">
-                        <h3>REACT JS</h3>
-                        <h4>Coder House</h4>
-                        <h5>Feb 2023 - Mar 2023</h5>
-                        <hr>
-                    </div>
-                </div>
-                <div class="coder">
-                    <a href="./img/CertificadoJavaScript.png" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-                    <div class="coder_content">
-                        <h3>JAVASCRIPT</h3>
-                        <h4>Coder House</h4>
-                        <h5>Oct 2022 - Dec 2022</h5>
-                        <hr>
-                    </div>
-                </div>
-                <div class="coder">
-                    <a href="./img/CertificadoDesarrolloWeb.png" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-                    <div class="coder_content">
-                        <h3>WEB DEVELOPER</h3>
-                        <h4>Coder House</h4>
-                        <h5>Aug 2022 - Oct 2022</h5>
-                        <hr>
-                    </div>
-                </div>
-                <div class="coder">
-                    <a href="http://ude.my/UC-4f635be4-e1a7-43c5-93c8-49e9abf50fe3" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-                    <div class="coder_content">
-                        <h3>SOFTWARE TESTING</h3>
-                        <h4>Udemy</h4>
-                        <h5>Feb 2023 - Mar 2023</h5>
-                    </div>
-                </div>
-            </div>
+      <div class="content_education">
+        <div class="content_education_title">
+          <h2 id="education_title">EDUCACION</h2>
         </div>
+        <div class="content_education_describe">
+          <div class="present">
+            <h3>ANALISTA DE SISTEMAS</h3>
+            <h4>Ort Institute Argentina</h4>
+            <h5>Aug 2021 - Present</h5>
+            <hr />
+          </div>
+          <div class="present">
+            <h3>ANALISTA PROGRAMADOR</h3>
+            <h4>Ort Institute Argentina</h4>
+            <h5>Aug 2021 - Dic 2022</h5>
+            <hr />
+          </div>
+          <div class="coder">
+            <a href="./img/CertificadoReactJs.png" target="_blank"
+              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+            ></a>
+            <div class="coder_content">
+              <h3>REACT JS</h3>
+              <h4>Coder House</h4>
+              <h5>Feb 2023 - Mar 2023</h5>
+              <hr />
+            </div>
+          </div>
+          <div class="coder">
+            <a href="./img/CertificadoJavaScript.png" target="_blank"
+              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+            ></a>
+            <div class="coder_content">
+              <h3>JAVASCRIPT</h3>
+              <h4>Coder House</h4>
+              <h5>Oct 2022 - Dec 2022</h5>
+              <hr />
+            </div>
+          </div>
+          <div class="coder">
+            <a href="./img/CertificadoDesarrolloWeb.png" target="_blank"
+              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+            ></a>
+            <div class="coder_content">
+              <h3>DESARROLLADOR WEB</h3>
+              <h4>Coder House</h4>
+              <h5>Aug 2022 - Oct 2022</h5>
+              <hr />
+            </div>
+          </div>
+          <div class="coder">
+            <a
+              href="http://ude.my/UC-4f635be4-e1a7-43c5-93c8-49e9abf50fe3"
+              target="_blank"
+              ><i class="fa fa-graduation-cap" aria-hidden="true"></i
+            ></a>
+            <div class="coder_content">
+              <h3>SOFTWARE TESTING</h3>
+              <h4>Udemy</h4>
+              <h5>Feb 2023 - Mar 2023</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="experience" class="experience">
-        <div>
-            <div class="content_experience">
-                <h2 id="experience_title">EXPERIENCE</h2>
-                <div class="fila">
-                    <div class="col left">
-                        <div class="item left">
-                            <h4 id="first_job">Head Teller - Branch Operations Manager</h4>
-                            <span class="workplace">Banco Credicoop Coop. Ltdo.</span>
-                            <span class="date">Mar 2020 - Aug 2022</span>
-                            <div class="conectorl">
-                                <div class="circlel"></div>
-                            </div>
-                            
-                        </div>
-                        <div class="item left">
-                            <h4 id="third_job">Credit Risk Analyst</h4>
-                            <span class="workplace">Metropolis Cia. Financiera</span>
-                            <span class="date">Dec 2012 - Jun 2014</span>
-                            <div class="conectorl">
-                                <div class="circlel"></div>
-                            </div>
-                            
-                        </div>
-                        <div class="item left">
-                            <h4 id="fifth_job">Teller</h4>
-                            <span class="workplace">Metropolis Cia. Financiera</span>
-                            <span class="date">Mar 2008 - May 2010</span>
-                            <div class="conectorl">
-                                <div class="circlel"></div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div class="col right">
-                        <div class="item right">
-                            <h4 id="second_job">Bank Teller</h4>
-                            <span class="workplace">Banco Credicoop Coop. Ltdo.</span>
-                            <span class="date">Jun 2014 - Mar 2020</span>
-                            <div class="conectorr">
-                                <div class="circler"></div>
-                            </div>
-                            
-                        </div>
-                        <div class="item right">
-                            <h4 id="fourth_job">Head Teller</h4>
-                            <span class="workplace">Metropolis Cia. Financiera</span>
-                            <span class="date">May 2010 - Dec 2012</span>
-                            <div class="conectorr">
-                                <div class="circler"></div>
-                            </div>
-                            
-                        </div>
-                    </div>
+      <div>
+        <div class="content_experience">
+          <h2 id="experience_title">EXPERIENCIA</h2>
+          <div class="fila">
+            <div class="col left">
+              <div class="item left">
+                <h4 id="first_job">Tesorero</h4>
+                <span class="workplace">Banco Credicoop Coop. Ltdo.</span>
+                <span class="date">Mar 2020 - Aug 2022</span>
+                <div class="conectorl">
+                  <div class="circlel"></div>
                 </div>
+              </div>
+              <div class="item left">
+                <h4 id="third_job">Analista de Riesgos</h4>
+                <span class="workplace">Metropolis Cia. Financiera</span>
+                <span class="date">Dec 2012 - Jun 2014</span>
+                <div class="conectorl">
+                  <div class="circlel"></div>
+                </div>
+              </div>
+              <div class="item left">
+                <h4 id="fifth_job">Cajero</h4>
+                <span class="workplace">Metropolis Cia. Financiera</span>
+                <span class="date">Mar 2008 - May 2010</span>
+                <div class="conectorl">
+                  <div class="circlel"></div>
+                </div>
+              </div>
             </div>
+            <div class="col right">
+              <div class="item right">
+                <h4 id="second_job">Cajero de Banco</h4>
+                <span class="workplace">Banco Credicoop Coop. Ltdo.</span>
+                <span class="date">Jun 2014 - Mar 2020</span>
+                <div class="conectorr">
+                  <div class="circler"></div>
+                </div>
+              </div>
+              <div class="item right">
+                <h4 id="fourth_job">Responsable de Sucursal</h4>
+                <span class="workplace">Metropolis Cia. Financiera</span>
+                <span class="date">May 2010 - Dec 2012</span>
+                <div class="conectorr">
+                  <div class="circler"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="skills" class="skills">
-        <div class="content_skills">
-            <div class="title">
-                <h2 id="skills_title">SKILLS</h2>
-            </div>
-            <div class="languages">
-                <div class="item">
-                    <i class="devicon-react-original colored"></i>
-                    <h2>React Js</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-java-plain colored"></i>
-                    <h2>Java</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <h2>Javascript</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-html5-plain colored"></i>
-                    <h2>HTML5</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-css3-plain"></i>
-                    <h2>CSS</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-sass-original colored"></i>
-                    <h2>SASS</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-git-plain colored"></i>
-                    <h2>Git</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-github-original"></i>
-                    <h2>Github</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <h2>Node.js</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-csharp-line-wordmark colored"></i>
-                    <h2>C#</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-cplusplus-line colored"></i>
-                    <h2>C++</h2>
-                </div>
-                <div class="item">
-                    <i class="devicon-photoshop-line colored"></i>
-                    <h2>Photoshop</h2>
-                </div>
-            </div>
+      <div class="content_skills">
+        <div class="title">
+          <h2 id="skills_title">HABILIDADES</h2>
         </div>
+        <div class="languages">
+          <div class="item">
+            <i class="devicon-react-original colored"></i>
+            <h2>React Js</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain colored"></i>
+            <h2>Java</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain colored"></i>
+            <h2>Javascript</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain colored"></i>
+            <h2>HTML5</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-css3-plain"></i>
+            <h2>CSS</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-sass-original colored"></i>
+            <h2>SASS</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-git-plain colored"></i>
+            <h2>Git</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-github-original"></i>
+            <h2>Github</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h2>Node.js</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-csharp-line-wordmark colored"></i>
+            <h2>C#</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-cplusplus-line colored"></i>
+            <h2>C++</h2>
+          </div>
+          <div class="item">
+            <i class="devicon-photoshop-line colored"></i>
+            <h2>Photoshop</h2>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="portfolio" class="portfolio">
-        <h2>PORTFOLIO</h2>
-        <div class="portfolio_content">
-            <figure>
-                <img src="./img/proyecto_costos_cuadrado.jpg" alt="imagen_proyecto_costos">
-                <div class="text">
-                    <h3>COLOR PASTEL</h3>
-                    <a href="https://github.com/gabaiz88/ProyectoFinal_Aizman" target="_blank"><button class="btn btn-light">to CODE</button></a>
-                    <a href="https://proyecto-final-aizman.vercel.app/" target="_blank"><button class="btn btn-light">to DEPLOY</button></a>
-                </div>
-            </figure>
-            <figure>
-                <img src="./img/proyecto_laboutique_cuadrado.jpg" alt="imagen_proyecto_costos">
-                <div class="text">
-                    <h3>LA BOUTIQUE</h3>
-                    <a href="https://github.com/gabaiz88/PF_Aizman" target="_blank"><button class="btn btn-light">to CODE</button></a>
-                    <a href="https://gabaiz88.github.io/PF_Aizman/" target="_blank"><button class="btn btn-light">to DEPLOY</button></a>
-                </div>
-            </figure>
-            <figure>
-                <img src="./img/preview_plataforma_pagos.jpg" alt="plataforma-pagos">
-                <div class="text">
-                    <h3>Plataforma de Pagos</h3>
-                    <a href="https://github.com/gabaiz88/plataforma_pagos" target="_blank"><button class="btn btn-light">to CODE</button></a>
-                    <a href="https://plataforma-pagos.vercel.app/" target="_blank"><button class="btn btn-light">to DEPLOY</button></a>
-                </div>
-            </figure>
-            <figure>
-                <img src="./img/My_weather.jpg" alt="weather">
-                <div class="text">
-                    <h3>APP del Clima</h3>
-                    <a href="https://github.com/gabaiz88/myWeatherApp" target="_blank"><button class="btn btn-light">to Code</button></a>
-                    <a href="https://my-weather-app-aizman.vercel.app/" target="_blank"><button class="btn btn-light">to DEPLOY</button></a>
-                </div>
-            </figure>
-            <figure>
-                <video src="./video/Proyecto_ReactJs.mp4" autoplay muted loop playsinline></video>
-                <div class="text">
-                    <h3>NIMI Games</h3>
-                    <a href="https://github.com/gabaiz88/My_Ecommerce_ReactJS_Aizman" target="_blank"><button class="btn btn-light">to Code</button></a>
-                    <a href="https://my-ecommerce-react-js-aizman.vercel.app/" target="_blank"><button class="btn btn-light">to DEPLOY</button></a>
-                </div>
-            </figure>
-            <figure>
-                <video src="./video/reserva_espectaculo.mp4" autoplay muted loop playsinline></video>
-                <div class="text">
-                    <h3>Reserva de Espectáculo</h3>
-                    <a href="https://github.com/gabaiz88/Proyecto_Reserva_Espectaculo-PNT1-Aizman" target="_blank"><button class="btn btn-light">to CODE</button></a>
-                </div>
-            </figure>
-            <figure>
-                <video src="./video/practica_selenium.mp4" autoplay muted loop playsinline></video>
-                <div class="text">
-                    <h3>Práctica Testing - Selenium</h3>
-                    <a href="./files/Practica_Sauce_Demo.side" t    rget="_blank"><button class="btn btn-light">Download</button></a>
-                </div>
-            </figure>
-            <figure>
-                <video src="./video/Practica_Cypress.mp4" autoplay muted loop playsinline></video>
-                <div class="text">
-                    <h3>Práctica Testing - Cypress</h3>
-                    <a href="https://github.com/gabaiz88/Practica_Cypress_Orange" target="_blank"><button class="btn btn-light">to Code</button></a>
-                </div>
-            </figure>
-        </div>
+      <h2>PORTFOLIO</h2>
+      <div class="portfolio_content">
+        <figure>
+          <img
+            src="./img/proyecto_costos_cuadrado.jpg"
+            alt="imagen_proyecto_costos"
+          />
+          <div class="text">
+            <h3>COLOR PASTEL</h3>
+            <a
+              href="https://github.com/gabaiz88/ProyectoFinal_Aizman"
+              target="_blank"
+              ><button class="btn btn-light">to CODE</button></a
+            >
+            <a href="https://proyecto-final-aizman.vercel.app/" target="_blank"
+              ><button class="btn btn-light">to DEPLOY</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <img
+            src="./img/proyecto_laboutique_cuadrado.jpg"
+            alt="imagen_proyecto_costos"
+          />
+          <div class="text">
+            <h3>LA BOUTIQUE</h3>
+            <a href="https://github.com/gabaiz88/PF_Aizman" target="_blank"
+              ><button class="btn btn-light">to CODE</button></a
+            >
+            <a href="https://gabaiz88.github.io/PF_Aizman/" target="_blank"
+              ><button class="btn btn-light">to DEPLOY</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <img
+            src="./img/preview_plataforma_pagos.jpg"
+            alt="plataforma-pagos"
+          />
+          <div class="text">
+            <h3>Plataforma de Pagos</h3>
+            <a
+              href="https://github.com/gabaiz88/plataforma_pagos"
+              target="_blank"
+              ><button class="btn btn-light">to CODE</button></a
+            >
+            <a href="https://plataforma-pagos.vercel.app/" target="_blank"
+              ><button class="btn btn-light">to DEPLOY</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <img src="./img/My_weather.jpg" alt="weather" />
+          <div class="text">
+            <h3>APP del Clima</h3>
+            <a href="https://github.com/gabaiz88/myWeatherApp" target="_blank"
+              ><button class="btn btn-light">to Code</button></a
+            >
+            <a href="https://my-weather-app-aizman.vercel.app/" target="_blank"
+              ><button class="btn btn-light">to DEPLOY</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <video
+            src="./video/Proyecto_ReactJs.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="text">
+            <h3>NIMI Games</h3>
+            <a
+              href="https://github.com/gabaiz88/My_Ecommerce_ReactJS_Aizman"
+              target="_blank"
+              ><button class="btn btn-light">to Code</button></a
+            >
+            <a
+              href="https://my-ecommerce-react-js-aizman.vercel.app/"
+              target="_blank"
+              ><button class="btn btn-light">to DEPLOY</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <video
+            src="./video/reserva_espectaculo.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="text">
+            <h3>Reserva de Espectáculo</h3>
+            <a
+              href="https://github.com/gabaiz88/Proyecto_Reserva_Espectaculo-PNT1-Aizman"
+              target="_blank"
+              ><button class="btn btn-light">to CODE</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <video
+            src="./video/practica_selenium.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="text">
+            <h3>Práctica Testing - Selenium</h3>
+            <a href="./files/Practica_Sauce_Demo.side" t rget="_blank"
+              ><button class="btn btn-light">Download</button></a
+            >
+          </div>
+        </figure>
+        <figure>
+          <video
+            src="./video/Practica_Cypress.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="text">
+            <h3>Práctica Testing - Cypress</h3>
+            <a
+              href="https://github.com/gabaiz88/Practica_Cypress_Orange"
+              target="_blank"
+              ><button class="btn btn-light">to Code</button></a
+            >
+          </div>
+        </figure>
+      </div>
     </section>
-</body>
-<footer>
-    <a href="#intro" class="up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+  </body>
+  <footer>
+    <a href="#intro" class="up"
+      ><i class="fa fa-angle-double-up" aria-hidden="true"></i
+    ></a>
     <div class="networks">
-        <a href="https://www.linkedin.com/in/gabriel-aizman-419b92237/?locale=en_US" target="_blank"><i
-                class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/gabaiz88" target="_blank"><i class="fa-brands fa-github"
-                aria-hidden="true"></i></a>
-        <a href="mailto:gabaiz88@gmail.com" target="_blank"><i class="fa-solid fa-envelope"
-                aria-hidden="true"></i></a>
-        <h6>GABRIEL AIZMAN - 2023</h6>
+      <a
+        href="https://www.linkedin.com/in/gabriel-aizman-419b92237/?locale=en_US"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+      ></a>
+      <a href="https://github.com/gabaiz88" target="_blank"
+        ><i class="fa-brands fa-github" aria-hidden="true"></i
+      ></a>
+      <a href="mailto:gabaiz88@gmail.com" target="_blank"
+        ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+      ></a>
+      <h6>GABRIEL AIZMAN - 2023</h6>
     </div>
-</footer>
-<script src="./js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  </footer>
+  <script src="./js/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 </html>
