@@ -79,6 +79,7 @@ html {
     gap: 50px;
     margin-top: 60px;
     width: auto;
+    padding-bottom: 50px;
 }
 
 .intro .content_banner {
@@ -594,9 +595,8 @@ footer .up {
     /*Intro*/
 
     .intro {
-        height: 100vh;
         flex-direction: row;
-        margin-top: 30px;
+        padding-bottom: 50px;
     }
 
     .intro .content_banner {
