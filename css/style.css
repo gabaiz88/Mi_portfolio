@@ -558,6 +558,10 @@ footer .up {
     .experience .fila .item {
         padding: 25px;
     }
+
+    .education .content_education{
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 821px) {
