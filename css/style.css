@@ -556,7 +556,7 @@ footer .up {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #1972bb;
+  background-color: #56acfca5;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -586,7 +586,7 @@ footer .up {
     border-radius: 4px;
 }
 .user-message {
-    background-color: #38869a;
+    background-color: #026abe;
     text-align: right;
 }
 .bot-message {
