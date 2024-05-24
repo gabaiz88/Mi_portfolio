@@ -612,6 +612,7 @@ body {
 
 .input-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
@@ -795,7 +796,9 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-
+.input-container {
+    flex-direction: row;
+}
 }
 /*NAV responsive*/
 @media screen and (max-width: 820px) {
