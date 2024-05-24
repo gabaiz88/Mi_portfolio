@@ -568,7 +568,7 @@ footer .up {
 }
 .chat-container {
     width: 70%;
-    margin-right: 20px;
+    margin-left: 20px;
     border: 6px ridge #ccc;
     padding: 20px;
     border-radius: 20px 40px 40px 40px;
@@ -611,9 +611,6 @@ footer .up {
     color: white;
     cursor: pointer;
     border: none;
-}
-#pregunta{
-    color: #1e2326;
 }
 
 @media (min-width: 590px) {
