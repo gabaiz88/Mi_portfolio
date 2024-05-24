@@ -762,7 +762,7 @@ footer .up {
   #chat {
     max-height: 200px;
   }
-
+}
 /*NAV responsive*/
 @media screen and (max-width: 820px) {
   nav {
