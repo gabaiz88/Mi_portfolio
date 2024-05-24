@@ -586,7 +586,7 @@ body {
     max-height: 80%;
     overflow-y: auto;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -614,7 +614,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -782,7 +781,7 @@ body {
 
   .chat-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 30px 15px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -798,6 +797,7 @@ body {
 }
 .input-container {
     flex-direction: row;
+    gap: 10px;
 }
 }
 /*NAV responsive*/
