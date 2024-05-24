@@ -65,19 +65,23 @@
     <div class="content_banner">
       <div class="content_banner_about">
         <h3 id="about_me">UN POCO SOBRE MÍ..</h3>
-        <h4 id="about_me_description">
-          Soy un apasionado programador Full Stack con preferencia por el
-          Front-end. En los últimos 4 años, he adquirido habilidades en HTML,
-          CSS, Javascript, React, Bootstrap, Node.js y Java, así como en la
-          implementación de Test Unitarios, a través de la universidad, el
-          aprendizaje autodidacta y prácticas. <br>Con más de 10 años de
-          trayectoria en el sector financiero, alcancé la posición de
-          responsable de equipo, donde perfeccioné habilidades de liderazgo,
-          gestión y resolución de problemas en entornos exigentes.<br />
-          Estoy entusiasmado por asumir nuevos desafíos como desarrollador,
-          aprovechando mi base técnica y aptitudes adquiridas, para contribuir
-          a proyectos innovadores.
-        </h4>
+        <div class="chat-container">
+          <div id="chat">
+              <!-- Los mensajes del chat aparecerán aquí -->
+          </div>
+          <div class="input-container">
+              <select id="user-select">
+                  <option value="">Hazme una pregunta...</option>
+                  <option value="vives">¿Dónde vives?</option>
+                  <option value="trabajo">¿Cuál fue tu último trabajo?</option>
+                  <option value="trabajo anterior">¿A qué te dedicabas en Argentina?</option>
+                  <option value="tiempo libre">¿Qué te gusta hacer en tu tiempo libre?</option>
+                  <!-- Añade más opciones de preguntas aquí -->
+              </select>
+              <button onclick="handleUserInput()">Enviar</button>
+          </div>
+      </div>
+  
         <div class="CVs">
           <!-- <div class="content_banner_CV">
                         <a href="./cv/CV_Aizman_Gabriel_.pdf" target="_blank"><button type="button"

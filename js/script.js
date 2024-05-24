@@ -1,5 +1,4 @@
 let menuVisible = false;
-let contenidoModals = [];
 
 function show_hidden_menu() {
   if (menuVisible) {
@@ -77,19 +76,62 @@ if (window.location.hash) {
   }
 } */
 
-//Funcion fetch del data.json
-function traerModals() {
-  fetch("../data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      contenidoModals = data;
-      console.log(contenidoModals);
-      });
+
+//chatbot
+const responses = {
+  "vives": "Vivo en Valencia. C.P. 46024",
+  "trabajo": "En mi último trabajo, me desempeñe como asesor comercial, administrativo para una Universidad, aquí en Valencia. Te describo algunas de mis tareas diarias: - Gestioné cartera de prospectos: Autogestioné la cartera de posibles alumnos, llevando a cabo contactos telefónicos y vía WhatsApp, promoviendo las formaciones académicas de la universidad. - Ventas y asesoramiento: Presenté de manera persuasiva las formaciones ofrecidas, destacando sus beneficios y características relevantes, asesorando a los alumnos en el proceso de inscripción y planificación de sus estudios. - ",
+  "trabajo anterior": "En Argentina trabajé durante más de 13 años en el sector financiero / bancario. Los últimos 8 años allí, trabajé para el Banco Credicoop, finalizando mi carrera profesional allí, como tesorero, lider de equipo. Entre mis tareas diarias a destacar estaban: - Asesoramiento financiero estratégico: Brindé orientación a la gerencia en la gestión de recursos financieros y en la planificación a corto y largo plazo. - Gestión integral de tesorería: Supervisé la venta de una variedad de productos financieros, manteniendo un sistema eficiente de políticas y procedimientos para garantizar un adecuado control sobre las actividades de tesorería. - Relaciones sólidas con clientes y proveedores: Mantuve una comunicación sólida con clientes y proveedores de servicios, asegurando un servicio al cliente excelente y resolviendo problemas de manera efectiva.",
+  "tiempo libre": "En mis tiempos libres, me gusta ver pelicula, series. Soy aficionado por las películas de fantasía como Harry Potter o El señor de los añillos. También me gusta jugar al padel o salir a caminar."
+  // Añade más preguntas y respuestas predeterminadas aquí
+};
+
+function handleUserInput() {
+  const userSelect = document.getElementById('user-select');
+  const selectedValue = userSelect.value;
+  const selectedText = userSelect.options[userSelect.selectedIndex].text;
+  
+  if (selectedValue) {
+      addUserMessage(selectedText);
+      addBotResponse(selectedValue);
+      userSelect.value = '';
+  } else {
+      alert('Por favor, selecciona una pregunta.');
+  }
 }
 
-traerModals();
-
-const listarModals = (id) => {
-    
+function addUserMessage(message) {
+  const chat = document.getElementById('chat');
+  const userMessageDiv = document.createElement('div');
+  userMessageDiv.className = 'message user-message';
+  userMessageDiv.innerText = message;
+  chat.appendChild(userMessageDiv);
 }
+
+function addBotResponse(selectedValue) {
+  const chat = document.getElementById('chat');
+  const botMessageDiv = document.createElement('div');
+  botMessageDiv.className = 'message bot-message';
+  chat.appendChild(botMessageDiv);
+  
+  const response = responses[selectedValue];
+  typeText(botMessageDiv, response);
+}
+
+function typeText(element, text, index = 0) {
+  if (index < text.length) {
+      const nextChar = document.createTextNode(text.charAt(index));
+      element.appendChild(nextChar);
+      setTimeout(() => {
+          typeText(element, text, index + 1);
+          // Desplaza el contenedor del chat hacia abajo
+          scrollToBottom();
+      }, 50);
+  }
+}
+
+function scrollToBottom() {
+  const chat = document.getElementById('chat');
+  chat.scrollTop = chat.scrollHeight;
+}
+
