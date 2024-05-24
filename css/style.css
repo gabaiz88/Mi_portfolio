@@ -54,7 +54,7 @@ html {
 }
 
 .content_header header nav ul li a:hover {
-    color: #56acfc
+    color: #56acfc;
 }
 
 .nav_responsive {
@@ -605,10 +605,15 @@ footer .up {
         width: 550px;
     }
 
-    .intro .content_banner_profile .networks a:hover {
-        background-color: #56acfca5;
+    .linkdin_logo:hover {
+        background-color: #0170AD;
     }
-
+    .github_logo:hover{
+        background-color: #4c4f5d;
+    }
+    .mail_logo:hover{
+        background-color: #D7483D;
+    }
     .intro .content_banner_about {
         width: 550px;
         height: 520px;
@@ -727,12 +732,6 @@ footer .up {
 
     .portfolio figure .text h3 {
         margin-top: 30px;
-    }
-
-    /*Footer*/
-
-    footer .networks a:hover {
-        background-color: #56acfca5;
     }
 
 }
