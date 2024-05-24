@@ -567,8 +567,8 @@ footer .up {
   font-size: 20px;
 }
 .chat-container {
-  width: 75%;
-  margin-left: 40px;
+  width: 78%;
+  margin-left: 50px;
   border: 6px ridge #ccc;
   padding: 10px;
   border-radius: 20px 40px 40px 40px;
@@ -577,7 +577,7 @@ footer .up {
   box-shadow: 4px 1px 5px 0px rgba(179, 179, 179, 1);
 }
 #chat {
-  max-height: 200px; /* Ajusta esta altura según tus necesidades */
+  max-height: 250px;
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -759,7 +759,9 @@ footer .up {
     margin: 20px auto;
     padding: 15px;
   }
-}
+  #chat {
+    max-height: 200px;
+  }
 
 /*NAV responsive*/
 @media screen and (max-width: 820px) {
