@@ -137,7 +137,7 @@ html {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content:start;
+  justify-content:center;
   text-align: start;
 }
 
@@ -567,8 +567,7 @@ footer .up {
   font-size: 20px;
 }
 .chat-container {
-    width: 70%;
-    margin-left: 20px;
+    width: 80%;
     border: 6px ridge #ccc;
     padding: 20px;
     border-radius: 20px 40px 40px 40px;
