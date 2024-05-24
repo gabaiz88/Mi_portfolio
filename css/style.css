@@ -566,52 +566,76 @@ footer .up {
   line-height: 50px;
   font-size: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
 .chat-container {
-  width: 75%;
-  margin-left: 50px;
-  border: 6px ridge #ccc;
-  padding: 10px;
-  border-radius: 20px 40px 40px 40px;
-  -webkit-box-shadow: 4px 1px 5px 0px rgba(179, 179, 179, 1);
-  -moz-box-shadow: 4px 1px 5px 0px rgba(179, 179, 179, 1);
-  box-shadow: 4px 1px 5px 0px rgba(179, 179, 179, 1);
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%;
 }
+
 #chat {
-  max-height: 250px;
-  overflow-y: auto;
-  padding-right: 10px;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
 }
+
 .message {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 4px;
+    margin-bottom: 15px;
 }
+
 .user-message {
-  background-color: #026abe;
-  text-align: right;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 20px 20px 0 20px;
+    padding: 10px 15px;
+    align-self: flex-end;
 }
+
 .bot-message {
-  background-color: #ababab;
-  color: black;
-  font-weight: 500;
+    background-color: #6c757d;
+    color: #ffffff;
+    border-radius: 20px 20px 20px 0;
+    padding: 10px 15px;
+    align-self: flex-start;
 }
+
 .input-container {
-  display: flex;
-  margin-top: 10px;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
 }
-.input-container select,
-.input-container button {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 4px;
-  border: 2px solid #c0c0c0;
+
+.input-container select, .input-container button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ffffff;
 }
+
 .input-container button {
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
 }
 
 @media (min-width: 590px) {
@@ -758,9 +782,6 @@ footer .up {
     width: 100%;
     margin: 20px auto;
     padding: 15px;
-  }
-  #chat {
-    max-height: 200px;
   }
 }
 /*NAV responsive*/
