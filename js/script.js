@@ -79,10 +79,13 @@ if (window.location.hash) {
 
 //chatbot
 const responses = {
-  "vives": "Vivo en Valencia. C.P. 46024",
-  "trabajo": "En mi último trabajo, me desempeñe como asesor comercial, administrativo para una Universidad, aquí en Valencia. Te describo algunas de mis tareas diarias: - Gestioné cartera de prospectos: Autogestioné la cartera de posibles alumnos, llevando a cabo contactos telefónicos y vía WhatsApp, promoviendo las formaciones académicas de la universidad. - Ventas y asesoramiento: Presenté de manera persuasiva las formaciones ofrecidas, destacando sus beneficios y características relevantes, asesorando a los alumnos en el proceso de inscripción y planificación de sus estudios. - ",
-  "trabajo anterior": "En Argentina trabajé durante más de 13 años en el sector financiero / bancario. Los últimos 8 años allí, trabajé para el Banco Credicoop, finalizando mi carrera profesional allí, como tesorero, lider de equipo. Entre mis tareas diarias a destacar estaban: - Asesoramiento financiero estratégico: Brindé orientación a la gerencia en la gestión de recursos financieros y en la planificación a corto y largo plazo. - Gestión integral de tesorería: Supervisé la venta de una variedad de productos financieros, manteniendo un sistema eficiente de políticas y procedimientos para garantizar un adecuado control sobre las actividades de tesorería. - Relaciones sólidas con clientes y proveedores: Mantuve una comunicación sólida con clientes y proveedores de servicios, asegurando un servicio al cliente excelente y resolviendo problemas de manera efectiva.",
-  "tiempo libre": "En mis tiempos libres, me gusta ver pelicula, series. Soy aficionado por las películas de fantasía como Harry Potter o El señor de los anillos. También me gusta jugar al padel o salir a caminar."
+  "vives": "Vivo en Valencia. C.P. 46024, España",
+  "trabajo": "Mi último trabajo fue como asesor comercial, en una Universidad en Valencia. Allí he autogestionado una cartera de prospectos, promoviendo formaciones académicas a través de contactos telefónicos y WhatsApp. He asesorado a los alumnos en su inscripción, destacando beneficios y resolviendo dudas para asegurar el cierre de matriculaciones. También he realizado seguimiento y gestión administrativa, manejando situaciones como retrasos en pagos para garantizar una experiencia educativa satisfactoria.",
+  "trabajo anterior": "En Argentina trabajé más de 12 años en el sector bancario, finalizando como tesorero / Lider de equipo en Banco Credicoop. Brindé asesoramiento financiero estratégico, gestioné la tesorería y mantuve relaciones sólidas con clientes y proveedores, asegurando un servicio al cliente excelente y resolviendo problemas eficazmente.",
+  "tiempo libre": "En mis tiempos libres, me gusta ver peliculas, series. Soy aficionado por las películas de fantasía como Harry Potter o El señor de los anillos. También me gusta jugar al padel o salir a caminar.",
+  "herramientas": "Manejo lenguajes de programación como JavaScript, HTML, CSS y Java, junto con frameworks y librerías como React, Bootstrap, Node.js y Tailwind CSS. También utilizo herramientas como Git para control de versiones, Figma para diseño y Firebase para desarrollo backend. Además, aplico metodologías ágiles para gestionar y optimizar los proyectos de manera eficiente.",
+  "certificaciones": "He completado cursos y certificaciones en Metodologías Ágiles (Scrum) en Udemy (2024), Desarrollo Frontend con React en Coderhouse (2022-2023), Software Testing en Udemy (2023), y poseo un nivel de inglés B2, estudiado actualmente en ABA English (2024).",
+  "futuro": "A futuro me veo habiendo avanzado significativamente en mi carrera, asumiendo roles de mayor responsabilidad y liderazgo. Espero haber adquirido nuevas competencias técnicas y de gestión, y estar contribuyendo de manera estratégica a los proyectos del equipo. También me gustaría estar involucrado en iniciativas que impulsen la innovación dentro de mi campo.",
 };
 
 function handleUserInput() {
@@ -125,7 +128,7 @@ function typeText(element, text, index = 0) {
           typeText(element, text, index + 1);
           // Desplaza el contenedor del chat hacia abajo
           scrollToBottom();
-      }, 50);
+      }, 40);
   }
 }
 
