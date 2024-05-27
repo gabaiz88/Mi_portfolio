@@ -84,7 +84,7 @@ const responses = {
   "trabajo anterior": "En Argentina trabajé más de 12 años en el sector bancario, finalizando como tesorero / Lider de equipo en Banco Credicoop. Brindé asesoramiento financiero estratégico, gestioné la tesorería y mantuve relaciones sólidas con clientes y proveedores, asegurando un servicio al cliente excelente y resolviendo problemas eficazmente.",
   "tiempo libre": "En mis tiempos libres, me gusta ver peliculas, series. Soy aficionado por las películas de fantasía como Harry Potter o El señor de los anillos. También me gusta jugar al padel o salir a caminar.",
   "herramientas": "Manejo lenguajes de programación como JavaScript, HTML, CSS y Java, junto con frameworks y librerías como React, Bootstrap, Node.js y Tailwind CSS. También utilizo herramientas como Git para control de versiones, Figma para diseño y Firebase para desarrollo backend. Además, aplico metodologías ágiles para gestionar y optimizar los proyectos de manera eficiente.",
-  "certificaciones": "He completado cursos y certificaciones en Metodologías Ágiles (Scrum) en Udemy (2024), Desarrollo Frontend con React en Coderhouse (2022-2023), Software Testing en Udemy (2023), y poseo un nivel de inglés B2, estudiado actualmente en ABA English (2024).",
+  "certificaciones": "He completado cursos y certificaciones en Metodologías Ágiles (Scrum) en Udemy (2024), Desarrollo Frontend con React en Coderhouse (2022-2023), Software Testing en Udemy (2023), y poseo un nivel de inglés B2, estudiando actualmente en ABA English (2024).",
   "futuro": "A futuro me veo habiendo avanzado significativamente en mi carrera, asumiendo roles de mayor responsabilidad y liderazgo. Espero haber adquirido nuevas competencias técnicas y de gestión, y estar contribuyendo de manera estratégica a los proyectos del equipo. También me gustaría estar involucrado en iniciativas que impulsen la innovación dentro de mi campo.",
 };
 
@@ -137,3 +137,29 @@ function scrollToBottom() {
   chat.scrollTop = chat.scrollHeight;
 }
 
+// QUALIFICATION TABS
+let education = document.getElementById("education");
+let work = document.getElementById("work");
+let educationheader = document.getElementById("educationheader");
+let workheader = document.getElementById("workheader");
+workheader.style.color = "var(--first-color)";
+educationheader.style.color = "var(--text-color)";
+
+educationheader.addEventListener("click", () => {
+  let condition1 = work.classList.contains("qualification-inactive");
+  if (!condition1) {
+    education.classList.remove("qualification-inactive");
+    work.classList.add("qualification-inactive");
+    workheader.style.color = "var(--text-color)";
+    educationheader.style.color = "var(--first-color)";
+  }
+});
+workheader.addEventListener("click", () => {
+  let condition2 = education.classList.contains("qualification-inactive");
+  if (!condition2) {
+    work.classList.remove("qualification-inactive");
+    education.classList.add("qualification-inactive");
+    educationheader.style.color = "var(--text-color)";
+    workheader.style.color = "var(--first-color)";
+  }
+});
