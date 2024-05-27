@@ -308,6 +308,22 @@ body{
     margin-left: 110px;
 }
 
+.tooltiptext {
+    font-size: small;
+    font-weight: 600;
+    visibility: hidden;
+    width: 100px    ;
+    background-color: rgb(179, 166, 193);
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-right: 240px;
+    margin-top: 100px;
+  }
+  
 /*Experience mobile*/
 
 .experience {
@@ -606,8 +622,8 @@ footer .up {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #56acfca5;
-    color: #fff;
+    background-color: #CECBF2;
+    color: #000;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -711,6 +727,10 @@ footer .up {
             background-position: 2500vh;
         }
     }
+      
+      .coder:hover .tooltiptext {
+        visibility: visible;
+      }
 
     /*Skills*/
 
@@ -791,4 +811,5 @@ footer .up {
         border: none;
         background-color: #1e2326;
     }
-}
+} 
+
