@@ -82,7 +82,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 60px 0px;
+    margin: 120px 0px 60px 0px;
     width: auto;
     padding-bottom: 50px;
 }
@@ -334,6 +334,10 @@ body{
 .experience .content_experience {
     margin: auto;
     padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience h2 {
@@ -346,24 +350,24 @@ body{
 
 .experience .fila {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .experience .fila .col {
-    width: 40%;
+    width: 100%;
     padding: 0 20px;
 }
 
 .experience .fila .left {
-    border-right: 2px solid #CECBF2;
+
 }
 
 .experience .fila .right {
-    border-left: 2px solid #CECBF2;
 }
 
 .experience .fila .item {
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 30px;
     background-color: #211c33;
     position: relative;
@@ -392,55 +396,12 @@ body{
 }
 
 .experience .fila .right {
-    margin-left: 20px;
-    margin-top: 85px;
 }
 
 .experience .fila .right .item {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
-.experience .fila .item .conectorl {
-    height: 2px;
-    background-color: #CECBF2;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    right: -47px;
-    z-index: 5;
-}
-
-.experience .fila .item .conectorl .circlel {
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #CECBF2;
-    float: right;
-    position: relative;
-    bottom: 4px;
-}
-
-.experience .fila .item .conectorr {
-    height: 2px;
-    background-color: #CECBF2;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    left: -47px;
-    z-index: 5;
-}
-
-.experience .fila .item .conectorr .circler {
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #CECBF2;
-    float: left;
-    position: relative;
-    bottom: 4px;
-}
 
 /*Skills mobile*/
 
@@ -698,39 +659,85 @@ footer .up {
         width: 500px;
     }
 
+          
+    .coder:hover .tooltiptext {
+        visibility: visible;
+      }
+
     /*Experience*/
 
     .experience .fila {
-        width: 100%;
+        width: 85%;
+        flex-direction: row;
     }
 
     .experience .fila .col {
-        width: 49%;
+        width: 100%;
     }
 
     .experience .fila .right {
         margin-top: 0px;
+        border-left: 2px solid #CECBF2;
     }
 
     .experience .fila .left {
-        margin-right: 20px;
-        margin-left: 150px;
+        margin: 0 20px 50px 130px;
+        border-right: 2px solid #CECBF2;
+
     }
 
     .experience .fila .right {
-        width: 70%;
-        margin-right: 100px;
+        width: 75%;
+        margin: 0 150px 0 20px;
     }
 
-    @keyframes move {
-        to {
-            background-position: 2500vh;
-        }
+    .experience .fila .item {
+        padding: 15px;
     }
-      
-      .coder:hover .tooltiptext {
-        visibility: visible;
-      }
+
+    .experience .fila .item .conectorl {
+        height: 2px;
+        background-color: #CECBF2;
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        right: -47px;
+        z-index: 5;
+    }
+    
+    .experience .fila .item .conectorl .circlel {
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #CECBF2;
+        float: right;
+        position: relative;
+        bottom: 4px;
+    }
+    
+    .experience .fila .item .conectorr {
+        height: 2px;
+        background-color: #CECBF2;
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        left: -47px;
+        z-index: 5;
+    }
+    
+    .experience .fila .item .conectorr .circler {
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #CECBF2;
+        float: left;
+        position: relative;
+        bottom: 4px;
+    }
+    
+
 
     /*Skills*/
 
@@ -812,4 +819,3 @@ footer .up {
         background-color: #1e2326;
     }
 } 
-
