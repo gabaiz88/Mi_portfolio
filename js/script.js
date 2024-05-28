@@ -137,29 +137,15 @@ function scrollToBottom() {
   chat.scrollTop = chat.scrollHeight;
 }
 
-// QUALIFICATION TABS
-let education = document.getElementById("education");
-let work = document.getElementById("work");
-let educationheader = document.getElementById("educationheader");
-let workheader = document.getElementById("workheader");
-workheader.style.color = "var(--first-color)";
-educationheader.style.color = "var(--text-color)";
 
-educationheader.addEventListener("click", () => {
-  let condition1 = work.classList.contains("qualification-inactive");
-  if (!condition1) {
-    education.classList.remove("qualification-inactive");
-    work.classList.add("qualification-inactive");
-    workheader.style.color = "var(--text-color)";
-    educationheader.style.color = "var(--first-color)";
-  }
-});
-workheader.addEventListener("click", () => {
-  let condition2 = education.classList.contains("qualification-inactive");
-  if (!condition2) {
-    work.classList.remove("qualification-inactive");
-    education.classList.add("qualification-inactive");
-    educationheader.style.color = "var(--text-color)";
-    workheader.style.color = "var(--first-color)";
-  }
+// SKILLS
+const skillContent = document.querySelectorAll(".skill");
+const skillHeader = document.querySelectorAll(".skills_header");
+const skillContentArr = Array.from(skillContent);
+const skillHeaderArr = Array.from(skillHeader);
+
+skillHeaderArr.forEach((element, idx) => {
+  element.addEventListener("click", function () {
+    skillContentArr[idx].classList.toggle("skills_open");
+  });
 });

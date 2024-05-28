@@ -1,5 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;500;800&display=swap");
 
+:root {
+
+    --hue-color: 250;
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    /* #6e57e0 */
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --titulos_color: #CECBF2;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
 * {
     box-sizing: border-box;
     font-family: "Work Sans";
@@ -11,14 +54,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 22, 39, 1) 53%, rgb(43, 38, 69) 100%);
 }
 
 /*Header*/
 
 .content_header {
-    background-color: #ffffff;    
+    background-color: #ffffff;
     position: static;
     width: auto;
     top: 0;
@@ -145,7 +188,7 @@ body{
 .intro .content_banner_about h3 {
     font-family: "Righteous";
     font-size: 32px;
-    color: #CECBF2;
+    color: var(--titulos_color)
 }
 
 .intro .content_banner_about h4 {
@@ -190,7 +233,7 @@ body{
     height: auto;
     max-height: 300px;
     overflow-y: auto;
-    background-color: #dbdada;
+    background-color: #edecec;
     padding: 10px;
     border-radius: 10px;
 }
@@ -200,7 +243,7 @@ body{
 }
 
 .user-message {
-    background-color: #CECBF2;
+    background-color: var(--titulos_color);
     color: #000;
     border-radius: 20px 20px 0 20px;
     padding: 10px 15px;
@@ -274,7 +317,7 @@ body{
 .education .content_education .content_education_title h2 {
     font-family: "Righteous";
     font-size: 44px;
-    color: #CECBF2;
+    color: var(--titulos_color);
     margin-bottom: 50px;
 }
 
@@ -323,12 +366,12 @@ body{
     z-index: 1;
     margin-right: 240px;
     margin-top: 100px;
-  }
-  
+}
+
 
 
 /*Skills mobile*/
-
+/*
 .skills {
     color: #fff;
     height: 100vh;
@@ -355,7 +398,7 @@ body{
     font-family: "Righteous";
     text-align: center;
     padding: 20px 0;
-    color: #CECBF2;
+    color: var(--titulos_color)
 }
 
 .skills .content_skills .languages {
@@ -394,11 +437,11 @@ body{
 .skills .content_skills .item:hover {
     background-color: #253648;
 }
-
+*/
 /*Portfolio mobile*/
 
 .portfolio {
-    padding: 200px 0 100px 0;
+    padding: 0px 0 100px 0;
     color: #fff;
     height: auto;
     display: flex;
@@ -417,7 +460,7 @@ body{
 }
 
 .portfolio h2 {
-    color: #CECBF2;
+    color: var(--titulos_color); 
     font-size: 44px;
     font-family: "Righteous";
     padding-bottom: 20px;
@@ -508,7 +551,7 @@ footer .up {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #CECBF2;
+    background-color: var(--titulos_color);
     color: #000;
     position: absolute;
     left: 50%;
@@ -584,20 +627,8 @@ footer .up {
         width: 500px;
     }
 
-          
     .coder:hover .tooltiptext {
         visibility: visible;
-      }
-
-
-    
-
-
-    /*Skills*/
-
-    .skills .content_skills {
-        width: 500px;
-        margin-top: 80px;
     }
 
     /*Portfolio*/
@@ -627,10 +658,10 @@ footer .up {
     .input-container select {
         width: 75%;
     }
+
     .input-container button {
         width: 20%;
     }
-
 }
 
 /*NAV responsive*/
@@ -675,8 +706,8 @@ footer .up {
 
     .content_header header nav ul li a {
         color: #ffffff;
-    }    
-} 
+    }
+}
 
 
 /* The actual timeline (the vertical ruler) */
@@ -684,10 +715,10 @@ footer .up {
     position: relative;
     max-width: 1200px;
     margin: 50px auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -696,18 +727,18 @@ footer .up {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+/* Container around content */
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+/* The circles on the timeline */
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -718,20 +749,20 @@ footer .up {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+/* Place the container to the left */
+.left {
     left: -25.4%;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 25.3%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -739,13 +770,13 @@ footer .up {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid #dbdada;
+    border: medium solid #edecec;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #dbdada;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+    border-color: transparent transparent transparent #edecec;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -753,81 +784,200 @@ footer .up {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #dbdada;
+    border: medium solid #edecec;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #dbdada transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: #dbdada;
-    position: relative;
-    border-radius: 6px;
-    color:#000000;
+    border-color: transparent #edecec transparent transparent;
 }
 
-.experience{
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #edecec;
+    position: relative;
+    border-radius: 6px;
+    color: #000000;
+}
+
+.experience {
     background: #fff;
     position: relative;
     padding: 20px;
     margin-top: 100px;
-    }
+}
 
-.experience .experience_all{
-    margin: 30px 300px 30px 300px; 
-    border-radius: 40px; 
+.experience .experience_all {
+    margin: 30px 300px 30px 300px;
+    border-radius: 40px;
     background-color: #211c33;
 }
 
-  .experience h2 {
+.experience h2 {
     text-align: center;
     font-size: 2.5em;
     color: #ab98f0;
     font-family: Righteous;
     padding-top: 20px;
 }
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+
+/* SKILLS  */
+
+.skills {
+    padding: 4rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills_container {
+    row-gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    /*margin-bottom: var(--mb-2-5);*/
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 380px;
+}
+
+.skills_icon,
+.skills_arrow {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--first-color);
+}
+
+.skills_icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+    font-size: var(--h3-font-size);
+    color: white;
+}
+
+.skills_subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills_arrow {
+    margin-left: auto;
+    transition: 0.4s;
+}
+
+.skills_list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills_titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: white;
+}
+
+.single_skill_icon {
+    color: var(--first-color);
+    font-size: var(--h1-font-size);
+}
+
+.external-logo {
+    width: var(--h1-font-size);
+}
+
+.skills_bar {
+    height: 5px;
+    border-radius: 0.25rem;
+    background-color: var(--first-color);
+}
+
+.skills_list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills_open .skills_list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+    transition: all 0.3s;
+}
+
+.skills_open .skills_arrow {
+    transform: rotate(-180deg);
+}
+
+.section_title {
+    align-items: center;
+    color: var(--titulos_color);
+    font-family: "Righteous";
+    margin-bottom: 50px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 800px) {
+
     /* Place the timelime to the left */
     .timeline::after {
-    left: 31px;
+        left: 31px;
     }
-    
+
     /* Full-width containers */
     .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-    left: 60px;
-    border: medium solid #dbdada;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #dbdada transparent transparent;
+        left: 60px;
+        border: medium solid #edecec;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #edecec transparent transparent;
     }
-  
+
     /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
+    .left::after,
+    .right::after {
+        left: 15px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .right {
-    left: 1%;
+        left: 1%;
     }
+
     .left {
-        left:1%;
-      }
-      .experience .experience_all{
+        left: 1%;
+    }
+
+    .experience .experience_all {
         margin: 0;
     }
-  }
-  
+    .skills_container {
+        row-gap: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skills_header {
+        width: 320px;
+    }
+}
+
