@@ -316,7 +316,7 @@ body {
 
 .education .content_education .content_education_title h2 {
     font-family: "Righteous";
-    font-size: 44px;
+    font-size: 2.5rem;
     color: var(--titulos_color);
     margin-bottom: 50px;
 }
@@ -819,7 +819,7 @@ footer .up {
 .experience h2 {
     text-align: center;
     font-size: 2.5em;
-    color: #ab98f0;
+    color: var(--titulos_color);
     font-family: Righteous;
     padding-top: 20px;
 }
@@ -861,7 +861,7 @@ footer .up {
 }
 
 .skills_title {
-    font-size: var(--h3-font-size);
+    font-size: 1.5rem;    
     color: white;
 }
 
@@ -923,12 +923,119 @@ footer .up {
 }
 
 .section_title {
+    text-align: center;
     align-items: center;
     color: var(--titulos_color);
     font-family: "Righteous";
     margin-bottom: 50px;
+    font-size: 2.5rem;
 }
 
+/* CONTACT ME  */
+
+.contact_inputs{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact_inputs .contact_content {
+    background-color: #211c33;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact_container {
+    row-gap: 3rem;
+    margin-bottom: 10rem;
+  }
+
+.contact_container .contact_container_child{
+    justify-self: end;
+    margin-right: 8rem;
+}
+
+.contact_container_child a {
+    text-decoration: none;
+}  
+
+.contact_container button {
+        display: inline-block;
+        background-color: var(--first-color);
+        color: #fff;
+        padding: 1rem;
+        width: 11rem;
+        border-radius: 0.5rem;
+        font-weight:400;
+        border: none;
+}
+  
+  .contact_info {
+    display: flex;
+    margin-bottom: var(--mb-2);
+    align-items: flex-end;
+  }
+
+  .contact_icon {
+    font-size: 2rem;
+    color:#9D4EDD;
+    margin-right: var(--mb-0-75);
+  }
+  
+  .contact_title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: #ffffff;
+  }
+  
+  .contact_subtitle {
+    font-size: var(--small-font-size);
+    color:#d6d5d5;
+  }
+  
+  .contact_content {
+    background-color: #211c33;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+  }
+  
+  .contact_input {
+    width: 100%;
+    background-color:#211c33;
+    color:#fff;
+    font-size:medium;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+  }
+
+  
+  .contact_label {
+    font-size:medium;
+    color: #fff;
+  }
+  
+  .alert_style {
+    text-align: center;
+    padding: 10px;
+    font-size: var(--small-font-size);
+    background-color: var(--first-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    display: none;
+  }
+
+  .contact_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; 
+}
+
+  .contact_form {
+    width: 460px;
+    justify-self: start;
+    display: grid;
+    gap: 1.5rem;
+  }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 800px) {
 
@@ -979,5 +1086,16 @@ footer .up {
     .skills_header {
         width: 320px;
     }
+
+    
+  .contact_container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center; 
+}
+.contact_form {
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
 }
 
