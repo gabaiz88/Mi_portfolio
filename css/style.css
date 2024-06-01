@@ -252,11 +252,13 @@ body {
 
 .input-container button {
   background-color: #9491bf;
-  color: #ffffff;
+  color: #000;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 25%;
+  font-size: large;
+  font-weight: 500;
 }
 
 .input-container button:hover {
