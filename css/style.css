@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;500;800&display=swap");
 
+/*Agregando estilos personalizados*/
 :root {
   --hue-color: 250;
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -40,7 +41,6 @@ body {
 }
 
 /*Header*/
-
 .content_header {
   background-color: #ffffff;
   position: static;
@@ -87,6 +87,7 @@ body {
   color: #9491bf;
 }
 
+/*Navegador*/
 .nav_responsive {
   background-color: #9491bf;
   color: #fff;
@@ -97,7 +98,6 @@ body {
 }
 
 /*Intro*/
-
 .intro {
   background-color: #ffffff;
   background-size: cover;
@@ -195,6 +195,7 @@ body {
   background-color: #d7483d;
 }
 
+/*Chatbot*/
 .chat-container {
   border-radius: 8px;
   overflow: hidden;
@@ -250,7 +251,7 @@ body {
 }
 
 .input-container button {
-  background-color: #007bff;
+  background-color: #9491bf;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -259,11 +260,10 @@ body {
 }
 
 .input-container button:hover {
-  background-color: #0056b3;
+  background-color: #737195;
 }
 
-/*Education mobile*/
-
+/*Education*/
 .education {
   height: 100vh;
   padding-top: 50px;
@@ -346,6 +346,7 @@ body {
   visibility: visible;
 }
 
+/*Porfolio*/
 .portfolio {
   color: #fff;
   height: auto;
@@ -426,8 +427,7 @@ body {
   height: 100%;
 }
 
-/*Footer mobile*/
-
+/*Footer*/
 footer {
   background-color: #1c0e27;
   color: #fff;
@@ -470,112 +470,7 @@ footer .up {
   font-size: 20px;
 }
 
-/*Header*/
-
-.selected_lang {
-  display: flex;
-  gap: 15px;
-}
-
-.selected_lang .lang_flag {
-  text-decoration: none;
-  border: none;
-  background-color: #1e2326;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 50px auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #9d4edd;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: -25.4%;
-}
-
-/* Place the container to the right */
-.right {
-  left: 25.3%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 20px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #edecec;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #edecec;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 20px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #edecec;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #edecec transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #edecec;
-  position: relative;
-  border-radius: 6px;
-  color: #000000;
-}
-
+/*Experiencia*/
 .experience {
   background: #fff;
   position: relative;
@@ -597,8 +492,92 @@ footer .up {
   padding-top: 20px;
 }
 
-/* SKILLS  */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+}
 
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #9d4edd;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: -25.4%;
+}
+
+.right {
+  left: 25.3%;
+}
+
+/*Añadir flechas a los costados*/
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #edecec;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #edecec;
+}
+
+/*Añadir flechas a los costados*/
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #edecec;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #edecec transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #edecec;
+  position: relative;
+  border-radius: 6px;
+  color: #000000;
+}
+
+/* Skills  */
 .skills {
   padding: 4rem 0 2rem;
   display: flex;
@@ -699,8 +678,7 @@ footer .up {
   font-size: 2.5rem;
 }
 
-/* CONTACT ME  */
-
+/*contacto*/
 .contact_inputs {
   display: grid;
   gap: 1.5rem;
@@ -813,6 +791,7 @@ footer .up {
     --small-font-size: 0.813rem;
   }
 
+  /*Navbar mobile*/
   nav {
     display: none;
   }
@@ -839,6 +818,11 @@ footer .up {
     padding: 10px 0;
   }
 
+  .content_header header nav ul li a {
+    color: #ffffff;
+  }
+
+  /*Intro mobile*/
   .intro {
     flex-direction: column;
   }
@@ -848,40 +832,26 @@ footer .up {
     height: 600px;
   }
 
-  /*Education*/
-
+  /*Educacion mobile*/
   .education .content_education {
     width: 90%;
   }
-
-  .selected_lang {
-    display: flex;
-    gap: 15px;
-    margin-left: 20px;
+  
+  .coder:hover .tooltiptext {
+    visibility: hidden;
   }
 
-  .selected_lang .lang_flag {
-    text-decoration: none;
-    border: none;
-    background-color: #1e2326;
-  }
-
-  .content_header header nav ul li a {
-    color: #ffffff;
-  }
-  /* Place the timelime to the left */
+  /*Experiencia mobile*/
   .timeline::after {
     left: 31px;
   }
 
-  /* Full-width containers */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
     border: medium solid #edecec;
@@ -889,13 +859,11 @@ footer .up {
     border-color: transparent #edecec transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
     left: 15px;
   }
 
-  /* Make all right containers behave like the left ones */
   .right {
     left: 1%;
   }
@@ -908,6 +876,7 @@ footer .up {
     margin: 0;
   }
 
+  /*Skills mobile*/
   .skills_container {
     row-gap: 0;
     display: grid;
@@ -917,27 +886,8 @@ footer .up {
   .skills_header {
     width: 320px;
   }
-
-  .contact_container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    padding: 0 20px;
-  }
-
-  .contact_form {
-    width: 100%;
-  }
-
-  .contact_container .contact_container_child {
-    justify-self: start;
-    margin-right: 0;
-  }
-
-  .coder:hover .tooltiptext {
-    visibility: hidden;
-  }
-
+  
+  /*Porfolio mobile*/
   .portfolio {
     margin-top: 100px;
     padding: 0 0 100px 0;
@@ -953,5 +903,22 @@ footer .up {
   }
   .portfolio figure .text h3 {
     margin-top: 5px;
+  }
+  
+  /*Contacto mobile*/
+  .contact_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    padding: 0 20px;
+  }
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .contact_container .contact_container_child {
+    justify-self: start;
+    margin-right: 0;
   }
 }
