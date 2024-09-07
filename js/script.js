@@ -20,7 +20,7 @@ function select() {
 const responses = {
   "vives": "Vivo en Valencia. C.P. 46024, España",
   "trabajo":
-    "Mi último trabajo fue como asesor comercial, en una Universidad en Valencia. Allí he autogestionado una cartera de prospectos, promoviendo formaciones académicas a través de contactos telefónicos y WhatsApp. He asesorado a los alumnos en su inscripción, destacando beneficios y resolviendo dudas para asegurar el cierre de matriculaciones. También he realizado seguimiento y gestión administrativa, manejando situaciones como retrasos en pagos para garantizar una experiencia educativa satisfactoria.",
+    "Actualmente me desempeño como Desarrollador Web Freelance, creando soluciones digitales a medida, y como Asesor Comercial en Norauto España, donde brindo soporte personalizado a clientes, gestionando ventas de productos y servicios automotrices",
   "trabajo anterior":
     "En Argentina trabajé más de 12 años en el sector bancario, finalizando como tesorero / Lider de equipo en Banco Credicoop. Brindé asesoramiento financiero estratégico, gestioné la tesorería y mantuve relaciones sólidas con clientes y proveedores, asegurando un servicio al cliente excelente y resolviendo problemas eficazmente.",
   "tiempo libre":
